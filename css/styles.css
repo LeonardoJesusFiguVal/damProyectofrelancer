@@ -1,6 +1,21 @@
 /* Definimos los parametros basicos del proyecto*/
 html{
     font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+
+}
+
+/* scroll snap */
+.servicio,
+.navegacion-principal,
+.formulario{
+    scroll-snap-align: center;
+    scroll-snap-stop: y mandatory;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
 }
 
 :root{ /*Colores que se van a usar*/
@@ -225,8 +240,12 @@ hay una imagen de fondo, y una pequeña descripcion*/
     .contenedor-campos{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, auto);
-        
+        grid-template-rows: repeat(2, auto) 20rem;
+        gap: 1rem;
+    }
+    .campo:nth-child(3),
+    .campo:nth-child(4){
+        grid-column: 1/3;
     }
 }
 
