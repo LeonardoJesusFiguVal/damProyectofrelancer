@@ -18,7 +18,8 @@ html{
     box-sizing: inherit;
 }
 
-:root{ /*Colores que se van a usar*/
+/*Colores que se van a usar*/
+:root{
     --blanco: #ffffff;
     --oscuro: #212121;
     --primario: #ffc107;
@@ -48,6 +49,7 @@ table, th, td {
     max-width: 120rem;
     margin: 0 auto;
 }
+
 /*Definimos los botones que vamos a usar en el proyecto*/
 .boton{
     background-color: var(--secundario);
